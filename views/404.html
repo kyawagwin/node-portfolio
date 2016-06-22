@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Kyaw Aung Win / Kevin - Software Engineer</title>
+	<meta name="description" content="Kyaw Aung Win / Kevin is a programmer, technologist, developer, engineer and more.">
+	<meta name="author" content="8Eyelashes">
+	
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+	<!-- FAVICON -->
+	<link rel="icon" href="favicon.ico" type="image/x-icon" /> 
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body>
+
+
+	<!-- PRELOADER -->
+	<section id="custom-preloader">
+		<header id="custom-preloader-content">
+			<object type="image/svg+xml" data="images/preloader.svg" id="preloader"></object>
+			<span>Loading...</span>
+		</header>
+	</section> <!-- end PRELOADER -->
+
+
+	<!-- BACKGROUND -->
+	<section id="background">
+	</section><!-- end BACKGROUND -->
+
+
+	<!-- MAIN CONTENT -->
+	<section id="content-wrap">
+		<div class="container-liquid">
+			
+			<div class="row">
+			    <h1>Oops!</h1>
+			    <h2>I can't seem to find the page you're lookin for.</h2>
+			</div>
+		</div>
+	</section><!-- end MAIN CONTENT -->
+	
+
+
+	<!-- SCRIPTS -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/custom.js" ></script>
+	
+
+	<script>
+
+		// PRELOADER SCRIPT
+		$(window).load(function() {
+			var prld = $('#custom-preloader-content').addClass("animated fadeOut");
+			setTimeout(function () {
+			    prld.css("display", "none").css("z-index", "-9999");
+			    $('#custom-preloader').css({
+			    	"display": "none",
+			    	"z-index": "-9999"
+			    });
+			    $('#content-wrap').css("z-index", "4");
+			    $('.main-content').css("z-index", "4");
+			}, 500);
+			$('body').delay(800).css({'overflow':'visible'});
+		})
+
+		
+		// BACKGROUND IMAGE/SLIDESHOW SCRIPT
+		$('#background').backstretch("images/background.jpg");
+
+	</script>
+	<!-- end SCRIPTS -->
+
+
+</body>
+
+</html>
